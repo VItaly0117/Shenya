@@ -18,8 +18,8 @@ if __name__ == "__main__":
     side = 10.0
     # Отримуємо результат роботи функції
     radius, fits = check_triangle_fits_in_circle(side)
-    print(f"Сторона трикутника: {side}")
-    print(f"Розрахунковий радіус: {radius:.3f}")
+    print("Сторона трикутника:", side)
+    print("Розрахунковий радіус:", round(radius, 3))
     if fits:
         print("Результат: Трикутник вміститься у коло.")
     else:
