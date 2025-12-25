@@ -8,7 +8,6 @@ def find_max_flow(*flows):
     if not flows:
         return None
 
-    # ЗАМІНА: Прибрали f-string, просто перелічуємо через кому
     print("DEBUG (Трасування): Отримано аргументів:", len(flows), ". Значення:", flows)
 
     max_flow = max(flows)
@@ -27,8 +26,6 @@ if __name__ == "__main__":
 
     # Конвертація
     flow2_ls = convert_m3min_to_ls(flow2_m3min)
-
-    # ЗАМІНА: Прості прінти
     print("Потік 1:", flow1_ls, "л/с")
     print("Потік 2:", flow2_ls, "л/с")
 
