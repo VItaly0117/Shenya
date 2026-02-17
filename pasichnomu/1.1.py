@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Вихідні дані
-v0 = 2      # початкова швидкість, м/с
+v0 = 5      # початкова швидкість, м/с
 a = 3       # прискорення, м/с^2
 t_max = 10  # загальний час руху, с
 t = np.linspace(0, t_max, 100)
@@ -15,9 +15,9 @@ s = v0 * t + (a * t**2) / 2  # Шлях: s(t) = v0t + at^2/2
 v_final = v0 + a * t_max
 s_final = v0 * t_max + (a * t_max**2) / 2
 
-print(f"Результати для t = {t_max} с:")
-print(f"Кінцева швидкість: {v_final} м/с")
-print(f"Пройдений шлях: {s_final} м")
+print("Результати для t = ",t_max," с:")
+print("Кінцева швидкість: ",v_final," м/с")
+print("Пройдений шлях: ",s_final," м")
 
 # Побудова графіків
 plt.figure(figsize=(12, 5))
