@@ -20,9 +20,12 @@ def calculations(A,Z):
 
 for name, data in elements.items():
     U = calculations(data[0], data[1])
-    plt.plot(R, U)
+    plt.plot(R, U, label=name)
 
 plt.ylim(-0.5e-20, 0.5e-20)
 plt.xlim(2e-10,6e-10)
+plt.xlabel("Відстань між частинками (м)")
+plt.ylabel("Потенціал Ленарда-Джонса (Дж)")
+plt.legend()
 plt.grid(True)
 plt.show()
