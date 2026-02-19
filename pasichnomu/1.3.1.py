@@ -12,11 +12,11 @@ elements={  #first columnt represents A*10**-23 Дж,second - Z*10**-10 m
 
 
 def calculations(A,Z):
-    R = np.linspace(0.78 * Z, 2.2 * Z, 500)
+    R = np.linspace(0.93 * Z, 2.2 * Z, 500)
     U1=(Z/R)**12 #сили відштовхування
     U2=(Z/R)**6 #сили притягання
     U=4*A*(U1-U2)
-    min_lim=0.78*Z
+    min_lim=0.93*Z
     max_lim=2.5*Z
 
     return U, min_lim, max_lim,R

@@ -10,7 +10,7 @@ elements={  #first columnt represents A*10**-23 Дж,second - Z*10**-10 m
     "Xe": [320e-23, 3.98e-10]
 }
 
-R = np.linspace(2e-10, 1e-9, 500)
+R = np.linspace(2.05e-10, 1e-9, 500)
 def calculations(A,Z):
 
     U1=(Z/R)**12 #сили відштовхування
@@ -22,8 +22,8 @@ for name, data in elements.items():
     U = calculations(data[0], data[1])
     plt.plot(R, U, label=name)
 
-plt.ylim(-0.5e-20, 0.5e-20)
-plt.xlim(2e-10,6e-10)
+plt.ylim(-0.32e-20, 0.32e-20)
+plt.xlim(2.1e-10,6e-10)
 plt.xlabel("Відстань між частинками (м)")
 plt.ylabel("Потенціал Ленарда-Джонса (Дж)")
 plt.legend()
