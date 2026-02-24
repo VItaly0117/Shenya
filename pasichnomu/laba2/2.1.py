@@ -41,7 +41,6 @@ for name, data in elements.items():
     plt.xlim(min_lim, max_lim)
     plt.xlabel("Відстань між частинками (м)")
     plt.ylabel("Потенціал Ленарда-Джонса (Дж)")
-
     plt.grid(True)
 
     # Виводимо графіки та легенду
