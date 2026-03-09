@@ -2,8 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def potential(r, epsilon=1.0, sigma=3.4):
-    if r == 0:
-        return float('inf')
     ratio = sigma / r
     return 4 * epsilon * (ratio**12 - ratio**6)
 
