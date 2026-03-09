@@ -26,7 +26,6 @@ if root:
 
 # --- Графік ---
 r_vals = np.linspace(2.5, 6, 400)
-u_vals = potential(r_vals)
 
 plt.figure(figsize=(10, 6))
 plt.plot(r_vals, u_vals, label='Потенціал U(R)')
