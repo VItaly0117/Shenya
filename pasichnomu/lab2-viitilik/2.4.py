@@ -2,8 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def potential(r, epsilon=1.0, sigma=3.4):
-    if r == 0:
-        return float('inf')
     ratio = sigma / r
     return 4 * epsilon * (ratio**12 - ratio**6)
 
@@ -26,7 +24,6 @@ if root:
 
 # --- Графік ---
 r_vals = np.linspace(2.5, 6, 400)
-u_vals = potential(r_vals)
 
 plt.figure(figsize=(10, 6))
 plt.plot(r_vals, u_vals, label='Потенціал U(R)')
